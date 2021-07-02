@@ -7,7 +7,7 @@ var server =http.createServer((req,res) => {
  res.end('Welome!')
 })
 server.listen(3000)
-console.log(ourmodule.ourFunction())
-fs.readFile('dummy.txt',function(err,data) => {
+console.log(ourmodule.PlusFunction('aa','bb'))
+fs.readFile('dummy.txt', 'utf-8',(err,data) => {
 console.log(data)
-});
+})
